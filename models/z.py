@@ -503,7 +503,7 @@ if db(db.t_Unidad_de_medida).isempty():
 	db.t_Unidad_de_medida.insert(f_nombre='Litros', f_abreviatura='l')
 	db.t_Unidad_de_medida.insert(f_nombre='Gramos', f_abreviatura='g')
 	db.t_Unidad_de_medida.insert(f_nombre='Kilogramos', f_abreviatura='kg')
-    
+
 
 # Catalogo de sustancias
 
@@ -622,3 +622,4 @@ if db(db.t_Sustancia).isempty():
     # Tiene el mismo CAS que fosforos blancos
     #db.t_Sustancia.insert(f_nombre='Fósforos rojos o amorfos', f_cas='7723-14-0', f_pureza='99', 
     #	f_estado='Sólido', f_control='N/A', f_peligrosidad=['Inflamable','Nocivo'])
+

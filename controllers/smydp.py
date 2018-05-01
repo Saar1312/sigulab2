@@ -967,7 +967,7 @@ def desechos():
 @auth.requires_login(otherwise=URL('modulos', 'login'))
 def catalogo():
 
-    if(auth.has_membership('Gestor de SMyDP') or  auth.has_membership('WEBMASTER')):
+    if(auth.has_membership('GESTOR DE SMyDP') or  auth.has_membership('WEBMASTER')):
         table = SQLFORM.smartgrid(  db.t_Sustancia, 
                                     onupdate=auth.archive,
                                     links_in_grid=False,
@@ -999,3 +999,4 @@ def index():
 @auth.requires_login(otherwise=URL('modulos', 'login'))
 def sustancias():
     return locals()
+

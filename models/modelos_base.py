@@ -161,8 +161,8 @@ db.define_table(
     Field('uso', 'string', notnull=True, label=T('Uso del espacio físico')),
     
     Field('dependencia', 'reference dependencias',
-        requires=IS_IN_DB(db, db.dependencias.id, '%(nombre)s', zero=None), label=T('Dependencia')), 
-    migrate=False)
+        requires=IS_IN_DB(db, db.dependencias.id, '%(nombre)s', zero=None), label=T('Dependencia')))
+
 
 db.espacios_fisicos._plural = 'Espacio Fisico'
 db.espacios_fisicos._singular = 'Espacio Fisico'
